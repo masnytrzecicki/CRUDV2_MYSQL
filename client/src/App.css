@@ -1,0 +1,104 @@
+@font-face {
+  font-family: 'Mulish';
+  src:  url(./font/Mulish-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mulish';
+  src:  url(./font/Mulish-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mulish';
+  src:  url(./font/Mulish-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Mulish';
+  src:  url(./font/Mulish-Bold.ttf) format('truetype');
+}
+body{
+  background: #e0e0e0;  /* fallback for old browsers */
+
+}
+h1{
+  color: #001f3f;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 3rem;
+}
+.App {
+  font-family: Mulish, 'sans-serif';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+label{
+  color: #001f3f;
+  font-weight: 700;
+}
+
+.form-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.form-wrapper input{
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 37px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #bebebe,
+  inset -5px -5px 10px #ffffff;
+  border: none;
+}
+
+button{
+  color: #001f3f;
+  width: 300px;
+  height: 50px;
+  font-weight: 700;
+  margin-top: 15px;
+  border-radius: 37px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow:  5px 5px 10px #bebebe,
+  -5px -5px 10px #ffffff;
+  border: none;
+}
+
+.buttonShow{
+   align-self: center;
+}
+
+button:hover{
+  cursor: pointer;
+  color: #001f3f;
+  font-weight: 700;
+  border-radius: 37px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #bebebe,
+  inset -5px -5px 10px #ffffff;
+  transition: all ease-in-out 200ms;
+  border: none;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
